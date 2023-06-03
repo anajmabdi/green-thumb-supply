@@ -1,6 +1,38 @@
-# Getting Started with Create React App
+# Green Thumb Supply
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that will keep track of inventory for a local gardening shop.
+
+#### *By Najma Abdi*
+<p>&nbsp;</p>
+
+## Technologies Used
+* React
+* JavaScript
+* Node.js
+
+## Description
+
+In this application, it will keep track of inventory for a local market that sells seeds.
+
+![Component Diagram](Component-diagram.png)
+
+- As a user you will be able to
+    - see a list of all available types of plant seeds.
+        For each plant, you will see its name, origin, price, planting season and needs.
+    - submit a form to add new plants to the inventory.
+    - be able to click on plant seeds to see its detail page.
+    - see how many pounds of seeds are left in a buckhorn container, which can hold roughly 2000 pounds.
+    - be able to click a button to sell a pound of seeds. This should decrease the number of pounds left by 1. The number of pounds in a sack of plants should not be able to go below 0.
+
+## Installation Requirements 
+You must make sure the following software packages are locally installed in order to use this application:
+- A preferred code editor *(my case: VS Code)*
+- Node.js
+
+## Setup
+
+- Clone the repository by running "*git clone https://github.com/anajmabdi/green-thumb-supply.git*" in the terminal after moving to the desktop folder.
+- Run "*code green-thumb-supply*" to open folder in code editor.
 
 ## Available Scripts
 
@@ -39,32 +71,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p>&nbsp;</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Known Bugs
 
-### Code Splitting
+*None*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p>&nbsp;</p>
 
-### Analyzing the Bundle Size
+# License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+MIT License
 
-### Making a Progressive Web App
+Copyright (c) [2023] [Najma Abdi]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
