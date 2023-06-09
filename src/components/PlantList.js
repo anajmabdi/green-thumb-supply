@@ -8,7 +8,7 @@ function PlantList(props) {
         <React.Fragment>
           <hr/>
           {props.plantList.map((plant, index) =>
-            <Plant name={plant.name} price = {plant.price} 
+            <Plant name={plant.name} scientificName={plant.scientificName} plantingSeasons={plant.plantingSeasons} pests={plant.pests} needs={plant.needs} price = {plant.price} 
               key={index}/>
           )}
         </React.Fragment>
