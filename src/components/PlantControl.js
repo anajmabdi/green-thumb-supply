@@ -17,6 +17,10 @@ class PlantControl extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  handleEditClick = () => {
+    this.setState({editing: true});
+  }
+
   handleEditingPlantInList = (plantToEdit) => {
     const editedMainPlantList = this.state.mainPlantList
       .filter(plant => plant.id !== this.state.selectedPlant.id)
