@@ -13,6 +13,7 @@ function PlantDetail(props){
       <p><strong>Planting Seasons</strong>: {plant.plantingSeasons} </p>
       <p><strong>Pests:</strong> {plant.pests} </p>
       <p><strong>Needs:</strong> {plant.needs} </p>
+      <button onClick={ props.onClickingEdit }>Update Plant</button>
       <hr/>
     </>
   );
@@ -20,6 +21,7 @@ function PlantDetail(props){
 
 PlantDetail.propTypes = {
   plant: PropTypes.object,
+  onClickingEdit: PropTypes.func,
 };
 
 export default PlantDetail;
