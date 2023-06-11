@@ -5,8 +5,10 @@ function Plant(props){
     return (
       <>
       <div onClick = {() => props.whenPlantClicked(props.id)}>
-      <h3>{props.name} </h3> 
+      <h2>{props.name} </h2> 
       <p>${props.price} </p>
+      <br></br>
+      <h3><strong>Click plant name for more details!</strong></h3>
       </div>
       </> 
     );
