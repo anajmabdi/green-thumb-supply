@@ -2,6 +2,7 @@ import React from 'react';
 import NewPlantForm from './NewPlantForm';
 import PlantList from './PlantList';
 import PlantDetail from './PlantDetail';
+import EditPlantForm from './EditPlantForm';
 
 class PlantControl extends React.Component {
 
@@ -10,9 +11,21 @@ class PlantControl extends React.Component {
     this.state = {
         formVisibleOnPage: false,
         mainPlantList: [],
-        selectedPlant: null
+        selectedPlant: null,
+        editing: false
     };
     this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleEditingPlantInList = (plantToEdit) => {
+    const editedMainPlantList = this.state.mainPlantList
+      .filter(plant => plant.id !== this.state.selectedPlant.id)
+      .concat(plantToEdit);
+    this.setState({
+        mainPlantList: editedMainPlantList,
+        editing: false,
+        selectedPlant: null
+      });
   }
 
   handleChangingSelectedPlant = (id) => {
@@ -30,7 +43,8 @@ class PlantControl extends React.Component {
     if (this.state.selectedPlant != null) {
       this.setState({
         formVisibleOnPage: false,
-        selectedPlant: null
+        selectedPlant: null,
+        editing: false
       });
     } else {
       this.setState(prevState => ({
@@ -43,8 +57,14 @@ class PlantControl extends React.Component {
   render(){
     let currentlyVisibleState = null;
     let buttonText = null; 
-    if (this.state.selectedPlant != null) {
-      currentlyVisibleState = <PlantDetail plant = {this.state.selectedPlant} />
+    if (this.state.editing ) {      
+      currentlyVisibleState = <EditPlantForm plant = {this.state.selectedPlant} onEditPlant = {this.handleEditingPlantInList} />
+      buttonText = "Return to Plant List";
+    } else if (this.state.selectedPlant != null) {
+      currentlyVisibleState = 
+      <PlantDetail 
+        plant = {this.state.selectedPlant}  
+        onClickingEdit = {this.handleEditClick} />
       buttonText = "Return to Plant List";
     }
     else if (this.state.formVisibleOnPage) {
