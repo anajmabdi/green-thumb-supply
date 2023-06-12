@@ -22,7 +22,7 @@ function PlantDetail(props){
       <p><strong>Planting Seasons</strong>: {plant.plantingSeasons} </p>
       <p><strong>Pests:</strong> {plant.pests} </p>
       <p><strong>Needs:</strong> {plant.needs} </p>
-      <p><strong>Pounds:</strong> {pounds}</p>
+      <p><strong>Pounds of seeds:</strong> {pounds}</p>
       <button onClick={ props.onClickingEdit }>Update Plant</button>
       <button onClick={ decrementPounds }>Buy pound</button>
       

@@ -14,7 +14,7 @@ A React application that will keep track of inventory for a local gardening shop
 
 In this application, it will keep track of inventory for a local market that sells seeds.
 
-![Component Diagram](Component-diagram.png)
+![Component Diagram](Component-diagram.jpg)
 
 - As a user you will be able to
     - see a list of all available types of plant seeds.
