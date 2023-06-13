@@ -10,7 +10,7 @@ function NewPlantForm(props) {
         props.onNewPlantCreation({
             name: event.target.name.value,
             scientificName: event.target.scientificName.value,
-            price: event.target.price.value,
+            price: parseInt(event.target.price.value),
             pests: event.target.pests.value,
             plantingSeasons: event.target.plantingSeasons.value,
             needs: event.target.needs.value,
